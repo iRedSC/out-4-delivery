@@ -1,15 +1,15 @@
-# Parcel Mail
+# Out 4 Delivery
 
-Parcel Mail finds shipment emails in Gmail, extracts package details with GPT-5.6 Luna, tracks them through Shippo, and exposes a small API for a Scriptable widget.
+Out 4 Delivery (O4D) turns shipping emails into a package-tracking widget. It reads one or more Gmail inboxes, extracts shipment details with GPT-5.6 Luna, and keeps delivery statuses current through Shippo.
 
-## Start
+## Get started
 
 1. Copy `.env.example` to `.env`.
-2. Add one or more Gmail accounts, an OpenAI key, a Shippo token, and a random API key.
+2. Add your Gmail accounts, OpenAI API key, Shippo token, and an O4D API key.
 3. Run `docker compose up -d --build`.
 4. Copy `scriptable/ParcelMail.js` into Scriptable and set `API_URL` and `API_KEY`.
 
-Generate an API key with `openssl rand -hex 32`.
+Generate the O4D API key with `openssl rand -hex 32`.
 
 Gmail accounts use 16-character app passwords and are configured as JSON:
 
